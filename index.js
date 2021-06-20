@@ -14,6 +14,7 @@ app.use((err, req, res, next) => {
 });
 
 app.get('/', (req, res) => {
+	console.log('Request received');
   res.send('Hello World!')
 });
 
