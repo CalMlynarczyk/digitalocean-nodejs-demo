@@ -1,0 +1,23 @@
+{
+  "name": "digitalocean-nodejs-demo",
+  "version": "1.0.0",
+  "description": "Digital Ocean App Platform NodeJS Service Demo",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/CalMlynarczyk/digitalocean-nodejs-demo.git"
+  },
+  "author": "Calvin Mlynarczyk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/CalMlynarczyk/digitalocean-nodejs-demo/issues"
+  },
+  "homepage": "https://gitlab.com/CalMlynarczyk/digitalocean-nodejs-demo#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
