@@ -6,8 +6,8 @@ export class AppController {
   constructor(private readonly appService: AppService) {}
 
   @Get()
-  async root(): Promise<string> {
-    console.log('Request received');
-    return 'Hello World!';
+  root(): string {
+    console.log("Request received");
+    return this.appService.getHello();
   }
 }
