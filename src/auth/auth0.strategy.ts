@@ -11,7 +11,7 @@ export class Auth0Strategy extends PassportStrategy(PassportAuth0Strategy) {
       domain: env.AUTH0_DOMAIN(),
       clientID: env.AUTH0_CLIENT_ID(),
       clientSecret: env.AUTH0_CLIENT_SECRET(),
-      callbackURL: env.AUTH0_CALLBACK_URL() || "http://localhost:5000/callback",
+      callbackURL: env.AUTH0_CALLBACK_URL(),
     });
   }
 

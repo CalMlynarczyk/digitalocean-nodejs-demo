@@ -6,6 +6,10 @@ export class AppService {
     return "Hello World!";
   }
 
+  getUser(): string {
+    return "Secret User";
+  }
+
   addUser(name: string): void {
     console.log("User:", name);
   }

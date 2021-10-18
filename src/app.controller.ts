@@ -8,6 +8,7 @@ import {
 } from "@nestjs/common";
 import { AuthGuard } from "@nestjs/passport";
 import { AppService } from "./app.service";
+import { JwtAuthGuard } from "./auth/jwt.guard";
 
 @Controller()
 export class AppController {
@@ -19,6 +20,13 @@ export class AppController {
     return this.appService.getHello();
   }
 
+  @UseGuards(JwtAuthGuard)
+  @Get("user")
+  getUser(): string {
+    return this.appService.getUser();
+  }
+
+  @UseGuards(JwtAuthGuard)
   @Post("user")
   addUser(@Body("name") name: string): void {
     this.appService.addUser(name);
