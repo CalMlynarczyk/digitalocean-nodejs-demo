@@ -11,4 +11,5 @@ export const env = {
   AUTH0_CLIENT_SECRET: () => process.env.AUTH0_CLIENT_SECRET,
   AUTH0_CALLBACK_URL: () => process.env.AUTH0_CALLBACK_URL,
   AUTH0_JWT_SECRET: () => process.env.AUTH0_JWT_SECRET,
+  SENTRY_DSN: () => process.env.SENTRY_DSN,
 };
